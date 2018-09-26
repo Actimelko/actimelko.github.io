@@ -1,1 +1,1 @@
-This is my personal website :)
+List of projects

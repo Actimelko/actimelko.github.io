@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Acme", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+a:hover {
+  color: #888;
+}
+
+.wrapper {
+    padding: 5px;
+	height: 100vh;
+    background-color: rgba(220, 235, 240, 0.25);
+	display: grid;
+    grid-template-rows: 75px 1fr;
+    grid-template-columns: repeat(12, 1fr);
+	grid-template-areas: 
+      "h h h h h h h h h h h h"
+      "m m m m m m m m m m m m";
+}
+
+.title {
+  grid-area: h;
+}
+
+.projects-list {
+  grid-area: m;
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+@media all and (max-width: 600px) {
+  .title, .projects-list {
+   text-align: center;
+ }
+
+}
